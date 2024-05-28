@@ -14,6 +14,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400..700;1,400..700&family=Poetsen+One&display=swap" rel="stylesheet">
 
+    <!-- Biblioteca AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+
     <link rel="stylesheet" href="index.css">
     <title>Global Solution | EcoMares </title>
 </head>
@@ -26,8 +30,8 @@
 
             <nav>
                 <ul>
-                    <li><a href="#">Problemas</a></li>
-                    <li><a href="#">Projeto</a></li>
+                    <li><a href="#problema">Problemas</a></li>
+                    <li><a href="#ecomares">Projeto</a></li>
                     <li><a href="#">Empresa</a></li>
                 </ul>
         </header>
@@ -35,7 +39,7 @@
         <!-- Conteúdo principal | Introdução Projeto -->
         <section class="projeto-introducao"> 
             <h1> EcoMares </h1>
-                <p> Sistema de Monitoramento de Poluição Oceânica com Projeto Educacional </p>
+                <p> Colônias de Conscientização e Monitoramento Ambiental </p>
                 <a href="#problema"> 
                     <img src="/img/seta.png" alt="">
                 </a>
@@ -46,28 +50,103 @@
         <section class="problema" id="problema"> 
             <h4> Problema </h4>
                 <h2> Oceans 2024 Brasil </h2>
-        </section>
+                    <p> O projeto Oceans 2024 Brasil visa a conservação dos recursos marinhos, compreendendo ecossistemas, promovendo a biodiversidade e gestão eficaz dos oceanos. </p>    
+                
+                    <p> A importância do projeto se dá pela grande biodiversidade marinha do Brasil, essencial para a economia nacional, promovendo a sustentabilidade dos oceanos para o benefício das futuras gerações. </p>
+
+                    <p> A Economia Azul visa garantir que as atividades humanas nos oceanos sejam ecologicamente responsáveis, socialmente inclusivas e economicamente viáveis a longo prazo, enfrentando desafios como poluição e mudanças climáticas. </p>
+                
+                    <div class="problema-conteudo"> 
+                        <h4> Entendimento do Problema:  </h4>
+ 
+                        <p> O Desafio de Inovação Azul  em 2024 visa envolver estudantes e entusiastas de tecnologia, inovação e sustentabilidade na criação de soluções para os problemas enfrentados pelos oceanos. </p>
+
+                        <p>  Os projetos devem focar em educação e conscientização, tecnologias sustentáveis e gestão e monitoramento. A iniciativa busca mobilizar a criatividade e conhecimento técnico dos participantes para preservar e recuperar os oceanos, garantindo um futuro sustentável. </p>
+
+                    </div>
+        
+                <a href="https://www.fiap.com.br"> FIAP </a> | <a href="https://www.g20.org/pt-br"> Oceans 2024 Brasil </a>
+            </section>
+
+        <!-- Conteúdo Projeto -->
+        <div data-aos="fade-up">
+            <main class="projeto-ecomar" id="ecomares"> 
+
+                <div class="img-logo"> 
+                    <img src="/img/Logo-EcoMares.png" alt="Logo - Projeto EcoMares">
+                </div> 
+                
+                <h4> Projeto </h4>
+                <h2> EcoMares: Sistema de Monitoramento de Poluição Oceânica com Projeto Educacional</h2>
+            
+                <p> A EcoMares tem como seu objetivo desenvolver uma plataforma com a utilização de sensores arduinos que conseguem em tempo real capturar níveis de poluição em diferentes regiões, sensores subaquáticos que monitoram a diversidade e a abundância de espécies marinhas em diferentes habitats. </p>
+                    
+                    <!-- Imagem Arduino 
+                    <img src="" alt=""> -->
+
+                <p> A plataforma integrará esses dados em um sistema de visualização interativa que apresenta informações de maneira clara e acessível. Incluindo também um projeto educativo para crianças/ jovens chamado “Maré Limpa”. </p>
+            </main>
+            
+            <!-- Cards Objetivos: -->
+            <section class="projeto-ecomar-cards"> 
+                
+            </section>
+        
+        
+        
+        </div>
 
 
-        <main class="projeto-ecomares"> 
-            <!-- <img src="/img/Logo-EcoMares.png" alt="Logo - Projeto EcoMares"> -->
-        </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
+
+
+<!-- 
+Botão de Saiba Mais 
+
+
+<div> 
+    <button class="btn-saiba"> Saiba + </button>
+    <div id="maisInfo" class="saiba-mais">
+        <p> ------ </p>
+                            
+    </div>
+</div>
+
+// Botão saiba mais - JS
+document.querySelector('.btn-saiba').addEventListener('click', function() {
+    var maisInfo = document.getElementById('maisInfo');
+    maisInfo.classList.toggle('mostrar');
+});
+
+
+.btn-saiba {
+    margin-top: 15px;
+    margin-left: 10px; 
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 8px 20px;
+    cursor: pointer;
+    background-color: var(--color-white);
+} .btn-saiba:hover {
+    background-color: var(--color-darkblue);
+    color: var(--color-white);
+
+}
+
+.saiba-mais {
+    margin-bottom: 10px;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transform: translateY(-20px);
+    transition: opacity 0.5s, max-height 0.5s, transform 0.5s;
+} .saiba-mais.mostrar {
+    opacity: 1;
+    max-height: 1000px;
+    transform: translateY(0);
+} 
+
+-->
