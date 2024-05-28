@@ -1,0 +1,94 @@
+:root{
+    --font-body-header: "Poetsen One", sans-serif;
+    --font-body-text: "Cuprum", sans-serif;
+    --color-darkblue: #00005A;
+    --color-white: #fff;
+    --transition: .5s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Declarando Informações Globais */
+ul {
+    list-style: none;
+} 
+
+a {
+    text-decoration: none;
+    color: var(--color-white);
+    transition: var(--transition);
+} a:hover {
+    color: var(--color-darkblue)
+}	
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+.container {
+    width: 100%;
+    height: 100vh;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/img/fundos-pag/fundo-mar.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+
+/* Produzindo o Cabeçalho */
+.header-page {
+    font-family: var(--font-body-header);
+
+    width: 100%;
+    height: 100px;
+    padding: 0 30px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.header-page nav ul {
+    display: flex;
+    gap: 30px;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.header-page img {
+    width: 200px;
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+/* Produzindo o Conteúdo - Introdução */
+.projeto-introducao { 
+    height: calc(90vh - 100px);
+    font-family: var(--font-body-header);
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+} .projeto-introducao h1 {
+    font-size: 5rem;
+    color: var(--color-white);
+} .projeto-introducao p {
+    font-size: 1.6rem;
+    color: var(--color-white);
+    margin-top: 1rem;
+} .projeto-introducao img {
+    margin-top: 20px;
+    transform: rotate(0.75turn);
+    width: 50px;
+    cursor: pointer;
+}   
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+/* Produzindo o Conteúdo - Problema */
