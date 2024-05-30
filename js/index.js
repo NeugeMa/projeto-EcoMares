@@ -11,4 +11,11 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-// Carosseul 
+// Card - Solução Diária
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.card-solucao').forEach(function(card) {
+        card.addEventListener('click', function() {
+            this.classList.toggle('flipped');
+        });
+    });
+});

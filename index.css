@@ -3,6 +3,7 @@
     --font-body-text: "Cuprum", sans-serif;
     --color-darkblue: #121252;
     --color-blue: #1345a2; 
+    --color-lightblue: #99bbfa;
     --color-white: #fff;
     --transition: .5s;
 }
@@ -39,6 +40,11 @@ h4 {
 p {
     font-size: 1.2rem;
     margin-top: 1rem;
+}
+
+.text-decoration {
+    font-weight: 900;
+
 }
 
 html {
@@ -139,7 +145,7 @@ html {
     border: none;
 } .problema-conteudo h4 {
     margin-left: 15px;
-    color: #9abbfa
+    color: var(--color-lightblue);
 
 } .problema-conteudo p {
     margin-left: 15px;
@@ -182,10 +188,19 @@ html {
     font-family: var(--font-body-text);
     margin-left: 30px;
     margin-bottom: 60px;
-
 } 
+
+.projeto-ecomar img {
+    margin-top: 40px;
+    margin-left: 45%;
+    transform: rotate(0.75turn);
+    width: 70px;
+    cursor: pointer;
+}
+
+
 .img-logo {
-    margin-left: 35%
+    margin-left: 35%;
 }
 
 /* ----------------------------------------------------------------------------------------------------- */
@@ -195,18 +210,10 @@ html {
 .projeto-ecomar-cards {
     font-family: var(--font-body-text);
     margin-left: 30px;
-} .projeto-ecomar-cards h2{
-    margin-bottom: 50px;
-}
-
-
-.fundo {
-    background-image:url('/img/fundos-pag/fundo-peixe.png');
-
 } 
 
 .container-cards {
-    margin-left: 16%;
+    margin-left: 220px;
     margin-bottom: 50px;
 
     position: relative;
@@ -214,16 +221,18 @@ html {
     justify-content: center;
     align-items: center;
 
-    max-width: 1200px;
+    max-width: 1350px;
     flex-direction: wrap;
     z-index: 1; 
 }
 
+
+
 .container-cards .card{
     position: relative;
     width: 280px;
-    height: 370px;
-    margin: 30px;
+    height: 400px;
+    margin: 10px;
 
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
@@ -259,7 +268,7 @@ html {
 
 .container-cards .card .content h3 {
     font-size: 1.8em;
-    color: #9abbfa;
+    color: var(--color-lightblue);
     z-index: 1; 
 }
 
@@ -274,21 +283,167 @@ html {
 /* Produzindo o Conteúdo - Público Alvo + Benefícios */
 
 .projeto-ecomar-alvo {
+    font-family: var(--font-body-text);
+    margin-left: 30px;
+    margin-top: 100px;
+}
+
+.content-alvo {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.content-alvo div {
+    flex: 1; 
+}
+
+.content-alvo img {
+    margin-top: 50px;
+    flex: 1; 
+    max-width: 100%; 
+}
+
+.alvo {
+    margin-bottom: 20px;
+    padding: 10px;
+} .algo ol, li {
+    font-size: 1.3rem;
+    margin-left: 10px;
+    margin-top: 30px;
+    color: var(--color-blue);
+    font-weight: 900;
+} .alvo p {
+    margin-left: 15px;
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+/* Solução - Diária */
+
+.solucao-diaria {
+    font-family: var(--font-body-text);
+    margin-left: 30px;
+    margin-top: 80px;
+}
+
+.solucao-diaria p{
+    margin-bottom: 30px;
+}
+
+.solucao {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card-solucao {
+    width: 400px;
+    height: 350px;
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card-solucao h3 {
+    margin-top: 40%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.card-face {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.6s;
+}
+
+.front {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+}
+
+.front h3 {
+    padding: 5px;
+}
+
+.back {
+    background-color: var(--color-lightblue);
+    color: var(--color-white);
+    transform: rotateY(180deg);
+}
+
+.back p{
+    margin-top: 30px;
+    margin-left: 10px;
 
 }
 
+.card-solucao.flipped .front {
+    transform: rotateY(180deg);
+}
 
+.card-solucao.flipped .back {
+    transform: rotateY(0);
+}
 
+/* ----------------------------------------------------------------------------------------------------- */
 
+/* Benefícios */ 
+.container-beneficios {
+    width: 100%;
+    height: 100vh;
 
-/* 
-
-.fundo {
-    background-image:url('/img/fundos-pag/fundo-animado.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/img/fundos-pag/fundo-mar2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.beneficios {
+    color: var(--color-white);
+    margin-top: 200px;
+
+    height: calc(100vh - 100px);
+    font-family: var(--font-body-header);
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 } 
 
+.beneficios img {
+    margin-top: 40px;
+    transform: rotate(0.75turn);
+    width: 70px;
+    cursor: pointer;
+}
+
+.beneficios-conteudo {
+    font-family: var(--font-body-text);
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+.content-justificativa {
+    display: flex;
+    justify-content: space-between; 
+} 
+.justificativa li {
+    margin-left: 15px;
+    color: var(--color-lightblue);
+} .justificativa p {
+    margin-left: 15px;
+}
+
+.justificativa img {
+    width: 20%;
+}
 
 
-*/
