@@ -20,3 +20,16 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// Card de escolha - benefícios
+for (let i = 1; i <= 5; i++) {
+    document.getElementById('toggleButton' + i).addEventListener('click', function() {
+        var content = document.getElementById('content' + i);
+        if (content.style.display === 'none') {
+            content.style.display = 'block';
+            this.textContent = '⬇';
+        } else {
+            content.style.display = 'none';
+            this.textContent = '☀';
+        }
+    });
+}

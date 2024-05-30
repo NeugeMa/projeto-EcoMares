@@ -431,19 +431,17 @@ html {
     margin-top: 50px;
 }
 
-.content-justificativa {
-    display: flex;
-    justify-content: space-between; 
-} 
-.justificativa li {
-    margin-left: 15px;
+.justificativa h3 {
+    margin-top: 30px;
     color: var(--color-lightblue);
-} .justificativa p {
-    margin-left: 15px;
+    font-size: 1.5rem;
 }
 
-.justificativa img {
-    width: 20%;
+.btn {
+    background-color: var(--color-lightblue);
+    color: var(--color-white);
+    border: none; 
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
 }
-
-
