@@ -162,7 +162,6 @@ html {
 } .btn-saiba:hover {
     background-color: transparent;
     color: var(--color-white);
-
 }
 
 .saiba-mais {
@@ -280,7 +279,7 @@ html {
 
 /* ----------------------------------------------------------------------------------------------------- */
 
-/* Produzindo o Conteúdo - Público Alvo + Benefícios */
+/* Produzindo o Conteúdo - Público Alvo  */
 
 .projeto-ecomar-alvo {
     font-family: var(--font-body-text);
@@ -339,7 +338,7 @@ html {
 
 .card-solucao {
     width: 400px;
-    height: 350px;
+    height: 400px;
     position: relative;
 
     display: flex;
@@ -392,6 +391,7 @@ html {
 .card-solucao.flipped .back {
     transform: rotateY(0);
 }
+
 
 /* ----------------------------------------------------------------------------------------------------- */
 
