@@ -378,7 +378,6 @@ html {
     transform: rotateY(0);
 }
 
-
 /* ----------------------------------------------------------------------------------------------------- */
 
 /* Benefícios */ 
@@ -506,4 +505,31 @@ html {
 .social a:hover {
     background-color: var(--color-lightblue);
     color: var(--color-white);
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+/* Rodapé */
+.rodape {
+    margin-top: 150px;
+    background-color: var(--color-darkblue);
+    height: 160px;
+    color: var(--color-white);
+    font-family: var(--font-body-text);
+}
+
+.rodape p { 
+    text-align: center;
+}
+
+.midia-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.midia-footer img {
+    width: 50px;
+    margin-top: 40px;
 }
