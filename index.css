@@ -448,7 +448,7 @@ html {
 }
 
 .container-empresa {
-    margin-top: 20px;
+    margin-top: 40px;
     display: flex;
     align-items: center ;
     height: 580px;
@@ -510,26 +510,40 @@ html {
 /* ----------------------------------------------------------------------------------------------------- */
 
 /* Rodapé */
-.rodape {
-    margin-top: 150px;
-    background-color: var(--color-darkblue);
-    height: 160px;
+
+footer {
+    background-color: #597cbd;
     color: var(--color-white);
     font-family: var(--font-body-text);
+    margin-top: 100px;
 }
 
-.rodape p { 
-    text-align: center;
+.rodape {
+    margin-top: 30px;
+    margin-left: 40px;
+} 
+
+.rodape span {
+    font-weight: 900;
 }
 
-.midia-footer {
+
+.rodape-info {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+    flex-direction: column;
 }
 
-.midia-footer img {
+.rodape-info h2 {
+    margin-bottom: 30px;
+}
+
+.rodape-info form, input, label {
+    margin-top: 10px;
+}
+.rodape-social h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.rodape-social img {
     width: 50px;
-    margin-top: 40px;
 }

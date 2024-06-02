@@ -33,3 +33,10 @@ for (let i = 1; i <= 5; i++) {
         }
     });
 }
+
+// Criando um alert + validando fórmulario 
+document.getElementById("emailForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    var email = document.getElementById("email").value;
+    alert("Obrigado por se inscrever! Você receberá notificações em " + email);
+});
