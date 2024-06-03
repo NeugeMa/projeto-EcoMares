@@ -11,15 +11,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-// Card - Solução Diária
-document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.card-solucao').forEach(function(card) {
-        card.addEventListener('click', function() {
-            this.classList.toggle('flipped');
-        });
-    });
-});
-
 // Card de escolha - benefícios
 for (let i = 1; i <= 5; i++) {
     document.getElementById('toggleButton' + i).addEventListener('click', function() {
@@ -40,3 +31,4 @@ document.getElementById("emailForm").addEventListener("submit", function(event) 
     var email = document.getElementById("email").value;
     alert("Obrigado por se inscrever! Você receberá notificações em " + email);
 });
+

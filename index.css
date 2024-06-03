@@ -52,6 +52,10 @@ p {
     margin-top: 50px;
 }
 
+.titulo p{
+    margin-bottom: 30px;
+}
+
 
 html {
     scroll-behavior: smooth;
@@ -215,6 +219,7 @@ html {
 .container-cards {
     margin-left: 220px;
     margin-bottom: 50px;
+    margin-top: 50px;
 
     position: relative;
     display: flex;
@@ -311,11 +316,37 @@ html {
 /* ----------------------------------------------------------------------------------------------------- */
 
 /* Solução - Diária */
+.solucao {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 
-.titulo p{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
+.card-solucao {
+    perspective: 1000px;
+    width: 350px;
+    height: 420px;
+} 
+.card-face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 1s ease-in-out;
+
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+} .card-face h3 {
+    text-align: center;
+    margin-top: 20px;
+} 
+
+.front {
+    background: #afd2f6;
+}  
 
 /* ----------------------------------------------------------------------------------------------------- */
 
