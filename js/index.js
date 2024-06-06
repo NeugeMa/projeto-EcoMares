@@ -11,27 +11,25 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-// Card de escolha - benefícios
-for (let i = 1; i <= 5; i++) {
-    document.getElementById('toggleButton' + i).addEventListener('click', function() {
-        var content = document.getElementById('content' + i);
-        if (content.style.display === 'none') {
-            content.style.display = 'block';
-            this.textContent = '⬇';
-        } else {
-            content.style.display = 'none';
-            this.textContent = '☀';
-        }
+// Criando um alert + validando fórmulario | Formulário de notificação
+window.addEventListener('DOMContentLoaded', (event) => {
+    document.getElementById("emailForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        var email = document.getElementById("email").value;
+        alert("Obrigado por se inscrever! Você receberá notificações em " + email);
     });
-}
-
-// Criando um alert + validando fórmulario 
-document.getElementById("emailForm").addEventListener("submit", function(event) {
-    event.preventDefault();
-    var email = document.getElementById("email").value;
-    alert("Obrigado por se inscrever! Você receberá notificações em " + email);
 });
 
+// Criando um alert + validando fórmulario | Formulário de dúvidas e sugestões
+window.addEventListener('DOMContentLoaded', (event) => {
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
 
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email2').value;
+        var message = document.getElementById('message').value;
 
+        alert(`Obrigado, ${name}! Suas informações foram enviadas com sucesso:\nEmail: ${email}\nMensagem: ${message}`);
+    });
+});
 

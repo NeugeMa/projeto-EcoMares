@@ -207,7 +207,14 @@ html {
     cursor: pointer;
 }
 
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
 
+.text-content {
+    flex: 1;
+}
 .img-logo {
     margin-left: 35%;
 }
@@ -349,7 +356,6 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-around;
-
     margin-bottom: 20px;
 }
 
@@ -411,15 +417,9 @@ html {
     cursor: pointer;
 }
 
-.beneficios-conteudo {
-    font-family: var(--font-body-text);
-    margin-left: 30px;
-    margin-top: 50px;
-}
-
 .justificativa {
     width: 80%;
-    min-height: 100vh;
+    min-height: 50vh;
     margin: 40px auto;
     margin-top: 100px;
 }
@@ -458,6 +458,47 @@ html {
 
 /* Tecnologias Usadas */
 
+
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+/* Fórmulario de Contato */
+.contato {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-contato {
+    gap: 10px;
+    padding: 20px;
+    width: 30%;
+
+    background-color: var(--color-lightblue);
+    box-shadow: 1px 1px 20px #597cbd;
+    transition: scale .7s;
+    border-radius: 20px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-contato {
+    background-color: #597cbd;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-contato:hover {
+    background-color: var(--color-darkblue);
+}
 
 
 /* ----------------------------------------------------------------------------------------------------- */
