@@ -32,3 +32,6 @@ document.getElementById("emailForm").addEventListener("submit", function(event) 
     alert("Obrigado por se inscrever! Você receberá notificações em " + email);
 });
 
+
+
+

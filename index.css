@@ -380,6 +380,8 @@ html {
 /* ----------------------------------------------------------------------------------------------------- */
 
 /* Benefícios */ 
+
+/* Imagem de Introdução  q*/ 
 .container-beneficios {
     width: 100%;
     height: 100vh;
@@ -415,19 +417,41 @@ html {
     margin-top: 50px;
 }
 
-.justificativa h3 {
-    margin-top: 30px;
-    color: var(--color-lightblue);
-    font-size: 1.5rem;
+.justificativa {
+    width: 80%;
+    min-height: 100vh;
+    margin: 40px auto;
+    margin-top: 100px;
 }
 
-.btn {
-    background-color: var(--color-lightblue);
-    color: var(--color-white);
-    border: none; 
-    border-radius: 10px;
-    padding: 5px;
-    margin: 5px;
+.card-justificativa {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;        
+    align-items: stretch;
+    justify-content: center;
+}
+
+.card-item {
+    flex: 2; 
+    min-height: 200px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center ;
+    text-align: center;
+    gap: 10px;
+    padding: 20px;
+
+    box-shadow: 1px 1px 20px #ccc;
+    transition: scale .7s;
+    border-radius: 20px;
+}
+
+.card-item img {
+    width: 100px;
 }
 
 /* ----------------------------------------------------------------------------------------------------- */
