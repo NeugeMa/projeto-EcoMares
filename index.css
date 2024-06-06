@@ -313,6 +313,35 @@ html {
     margin-left: 15px;
 }
 
+
+.persona {
+    display: flex;
+    align-items:center;
+}
+.persona img {
+    margin-right: 20px;
+}
+.persona h3 {
+    margin-top: 30px;
+    font-size: 1.5rem;
+    color: var(--color-blue);
+}
+
+.persona h4 {
+    color: #000;
+    font-size: 1.3rem;
+}
+
+.persona ul, li {
+    color: #000;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+} 
+
+.text-decoration2 {
+    color: #3f9cd2
+}
+
 /* ----------------------------------------------------------------------------------------------------- */
 
 /* Solução - Diária */
