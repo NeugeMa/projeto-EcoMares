@@ -8,6 +8,16 @@
     --transition: .5s;
 }
 
+
+/* Adicionando um breakpoint */
+/* Quando a largura da janela do navegador for de no máximo 600px */
+@media (max-width: 600px) {
+    h2 {
+        font-size: 2rem; 
+    }
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -207,14 +217,6 @@ html {
     cursor: pointer;
 }
 
-.content-wrapper {
-    display: flex;
-    justify-content: space-between;
-}
-
-.text-content {
-    flex: 1;
-}
 .img-logo {
     margin-left: 35%;
 }
