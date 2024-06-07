@@ -5,6 +5,7 @@
     --color-blue: #1345a2; 
     --color-lightblue: #99bbfa;
     --color-white: #fff;
+    --color-black: #000;
     --transition: .5s;
 }
 
@@ -145,7 +146,7 @@ html {
 } 
 
 .problema a {
-    color: #000;
+    color: var(--color-black); 
     font-weight: 900;
 } .problema a:hover {
     color: var(--color-blue);
@@ -203,7 +204,6 @@ html {
 /* Produzindo o Conteúdo - Solução */
 
 .projeto-ecomar {
-    /* background-color: #c0d3f7; */ 
     font-family: var(--font-body-text);
     margin-left: 30px;
     margin-bottom: 60px;
@@ -219,6 +219,47 @@ html {
 
 .img-logo {
     margin-left: 35%;
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+/* Tecnologias Usadas */
+
+.tecnologias h3 {
+    margin-top: 30px;
+    color: var(--color-black);
+    font-size: 1.4rem; 
+}
+
+.tecnologia-card {
+    width: 60%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #00005A;    
+    border-radius: 10px;
+    border: none;
+} .tecnologia-card li {
+    color: var(--color-white);
+    font-weight: normal;
+}
+
+
+.tecnologias a {
+    color: var(--color-black); 
+    font-weight: 900;
+    
+} .tecnologias a:hover {
+    color: var(--color-lightblue);
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 30%;
+    padding: 15px;
 }
 
 /* ----------------------------------------------------------------------------------------------------- */
@@ -337,12 +378,12 @@ html {
 }
 
 .persona h4 {
-    color: #000;
+    color: var(--color-black);
     font-size: 1.3rem;
 }
 
 .persona ul, li {
-    color: #000;
+    color: var(--color-black);
     font-size: 1.2rem;
     margin-top: 1rem;
 } 
@@ -455,13 +496,6 @@ html {
 .card-item img {
     width: 100px;
 }
-
-/* ----------------------------------------------------------------------------------------------------- */
-
-/* Tecnologias Usadas */
-
-
-
 /* ----------------------------------------------------------------------------------------------------- */
 
 /* Fórmulario de Contato */
@@ -562,7 +596,7 @@ html {
 .social a {
     text-align: center;
     border: solid 2px var(--color-lightblue);
-    color: #000;
+    color: var(--color-black);
     width: 75px;
     padding: 5px 0;
     border-radius: 10px;
